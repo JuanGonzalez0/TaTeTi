@@ -1,0 +1,57 @@
+body {  
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+}
+h2{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: burlywood;
+    
+}
+
+#tablero {
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
+    height: 375px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+.caja {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #D3D3D3;
+    background-color: burlywood;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja:hover {
+    background-color: #FFFFE0;
+}
+
+.jugador{
+    margin-top: 30px;
+    text-align: center;
+}
+
+#resetear {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 150px;
+    background-color: burlywood;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    font-size: 18px;
+}
+
+#resetear:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
