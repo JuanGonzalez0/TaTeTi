@@ -52,10 +52,7 @@ for(let i = 0; i < cajas.length; i++){
 
 function ganador(jugadorActual){
     for(let i = 0; i < combinaciones.length; i++){
-        const sas = combinaciones[i];
-        const a = sas[0];
-        const b = sas[1];
-        const c = sas[2];
+        const [a, b, c] = combinaciones[i];
         if(cajas[a].textContent === jugadorActual && cajas[b].textContent === jugadorActual && cajas[c].textContent === jugadorActual){
             return true
         }
